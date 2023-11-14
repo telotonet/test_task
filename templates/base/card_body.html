@@ -1,0 +1,11 @@
+{% if current_path == item.get_absolute_url %}
+    <a class="list-group-item fs-4 text-light bg-primary fw-bolder" href="{% url 'detail' item.path %}">
+        <i class="far fa-folder-open"></i> 
+        {{ item.title }}
+    </a>
+{% else %}
+    <a class="list-group-item bg-dark text-light" href="{% url 'detail' item.path %}">
+        <i class="far fa-file" style="width: 20px"></i>
+        {{ item.title }}
+    </a>
+{% endif %}

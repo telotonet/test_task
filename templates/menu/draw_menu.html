@@ -1,0 +1,9 @@
+<div class="card bg-dark mt-3 mx-auto w-50 shadow-lg">
+    <div class="card-body text-light">
+        <ul class="list-group fs-5">
+        {% for item in query_data %}
+            {% include 'base/card_body.html' with current_path=current_path item=item %}
+        {% endfor %}
+        </ul>
+    </div>
+</div>
