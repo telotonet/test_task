@@ -14,7 +14,7 @@ class MenuItem(models.Model):
         related_name="children",
         verbose_name="Родитель",
     )
-    path = models.CharField(max_length=255, blank=True, editable=True)
+    path = models.CharField(max_length=255, blank=True, editable=False)
 
     class Meta:
         verbose_name = "Меню"
