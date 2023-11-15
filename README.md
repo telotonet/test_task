@@ -20,7 +20,7 @@
 3. Установите зависимости
 
        pip install -r requirements.txt
-4. Примените миграции python
+4. Примените миграции
    
        python manage.py migrate
 6. Запустите сервер
